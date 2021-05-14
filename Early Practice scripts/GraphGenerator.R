@@ -1,7 +1,7 @@
-packageVersion("tidyverse")
 library("tidyverse")
-ggplot( data = diamonds) +
-	geom_bar(
-		mapping = aes(x =cut, fill = clarity),
-		position = "jitter"
-	)
+#ggplot(data = mpg, mapping = aes(x = class, y = hwy))+
+	#geom_boxplot()
+ggplot(data = mpg, mapping = aes(x = class, y= hwy))+
+	geom_boxplot()+
+	coord_flip()+
+	coord_flip()
