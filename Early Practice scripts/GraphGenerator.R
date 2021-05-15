@@ -1,7 +1,13 @@
 library("tidyverse")
-#ggplot(data = mpg, mapping = aes(x = class, y = hwy))+
-	#geom_boxplot()
-ggplot(data = mpg, mapping = aes(x = class, y= hwy))+
-	geom_boxplot()+
-	coord_flip()+
-	coord_flip()
+
+bar <- ggplot(data = diamonds) +
+	geom_bar(
+		mapping = aes (x= cut, fill = cut),
+		sjpw.legend = FALSE
+		width = 1
+	) +
+	theme(aspect.rati = 1)+
+	labs(x= NULL, y = NULL)
+
+bar + coord_flip()
+bar + coord_polar()
