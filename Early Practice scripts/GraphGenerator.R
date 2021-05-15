@@ -1,13 +1,9 @@
-library("tidyverse")
-
-bar <- ggplot(data = diamonds) +
-	geom_bar(
-		mapping = aes (x= cut, fill = cut),
-		sjpw.legend = FALSE
-		width = 1
-	) +
-	theme(aspect.rati = 1)+
-	labs(x= NULL, y = NULL)
-
-bar + coord_flip()
-bar + coord_polar()
+#The current code template:
+ggplot(data = <DATA>)+
+<GEOM_FUNCTION>(
+	mapping = aes(<MAPPINGS>),
+	stat = <STAT>,
+	position = <POSITION>
+)+
+<COORDINATE_FUNCTION>+
+<FACET_FUNCTION>
