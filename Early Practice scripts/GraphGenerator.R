@@ -1,3 +1,3 @@
 library("tidyverse")
 library("nycflights13")
-filter(flights, month ==1 , day ==1)
+(trial_data_frame <- filter(flights, month ==1 , day ==1))
