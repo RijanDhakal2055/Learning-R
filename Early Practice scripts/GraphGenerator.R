@@ -1,9 +1,4 @@
-#The current code template:
-ggplot(data = <DATA>)+
-<GEOM_FUNCTION>(
-	mapping = aes(<MAPPINGS>),
-	stat = <STAT>,
-	position = <POSITION>
-)+
-<COORDINATE_FUNCTION>+
-<FACET_FUNCTION>
+library("tidyverse")
+library("nycflights13")
+data(dat)
+filter()
