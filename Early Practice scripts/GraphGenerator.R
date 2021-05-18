@@ -1,3 +1,3 @@
 library("tidyverse")
-diamonds %>%
-    count(cut)
+ggplot(data = diamonds)+
+    geom_histogram(mapping = aes(x = carat), binwidth = 0.5)
