@@ -1,3 +1,3 @@
 library("tidyverse")
-ggplot(data = diamonds)+
-    geom_histogram(mapping = aes(x = carat), binwidth = 0.5)
+ggplot(data = faithful, mapping = aes(x = eruptions))+
+    geom_histogram(binwidth = 0.25)
