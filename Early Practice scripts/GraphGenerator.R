@@ -1,3 +1,5 @@
 library("tidyverse")
-ggplot(data = faithful, mapping = aes(x = eruptions))+
-    geom_histogram(binwidth = 0.25)
+ggplot( diamonds, aes(x = y))+
+    geom_histogram(binwidth = 0.5)+
+    coord_cartesian(ylim = c(0,50))
+    

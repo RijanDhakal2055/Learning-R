@@ -1,7 +1,1 @@
-packageVersion("tidyverse")
-library("tidyverse")
-ggplot( data = diamonds) +
-	geom_bar(
-		mapping = aes(x =cut, fill = clarity),
-		position = "jitter"
-	)
+&t=newext&atb=v273-4&ia=about
